@@ -2,18 +2,18 @@
 var SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 var recognition = new SpeechRecognition();
 var socket = io();
-var i=0;
+var i="off";
 
 //listening to the button
 document.getElementById("btn").addEventListener('click', () => {
   //if statement because SpeechRecognition doesn't have a toggle method
-  if (i!==0){
+  if (i==="on"){
     recognition.stop();
-    i=1;
+    i="off";
     console.log(i+" stopped");
   } else{
     recognition.start();
-    i=0;
+    i="on";
     console.log(i+" started");
     }
   //ui changes on btn click

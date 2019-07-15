@@ -11,3 +11,12 @@ Right now the app is only programmed to handle small talk but with handy tools i
  - Socket.io
  - JavaScript
  - HTML, CSS
+
+## To run locally
+### Prerequisites
+ - git
+ - npm
+### Steps
+ - run `git clone https://github.com/samay-v/chat-bot.git`
+ - install dependencies using `npm install` inside the directory
+ - then run `node index.js`
